@@ -8,17 +8,56 @@
   </head>
   <body>
     <div class="side-image">
-      <img src="images/clouds.jpg" alt="nuvole" class="nuvole" />
       <div class="side-image-header">
-        <h1>FORM</h1>
+        <p>FORM</p>
       </div>
     </div>
     <div class="main-page">
       <div class="main-page-header">
-        <h2>
+        <h2 class="testo1">
           Questo è un form realizzato per fare pratica, ho cercato di mantenere
-          uno stile molto semplice ma allo stesso tempo efficace
+          uno stile molto semplice ma allo stesso tempo efficace.
         </h2>
+        <h2>Iscriviti ora!</h2>
+      </div>
+      <div class="form-container">
+        <div class="form-row">
+          <div class="form-column">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" />
+          </div>
+          <div class="form-column">
+            <label for="surname">Cognome:</label>
+            <input type="text" id="surname" name="surname" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-column">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <div class="form-column">
+            <label for="phone">Numero di telefono:</label>
+            <input type="tel" id="phone" name="phone" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-column">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <div class="form-column">
+            <label for="confirm-password">Conferma password:</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              required
+            />
+          </div>
+        </div>
       </div>
     </div>
   </body>
