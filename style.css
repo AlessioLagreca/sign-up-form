@@ -44,7 +44,7 @@ body {
 }
 
 .main-page-header {
-  padding: 6rem 12rem 4rem 2rem;
+  padding: 6rem 12rem 4rem 4rem;
   background-color: rgb(249, 250, 251);
   display: flex;
   flex-direction: column;
@@ -74,8 +74,8 @@ body {
 }
 
 p {
-  font-size: 15vh;
-  color: rgb(123, 206, 219);
+  font-size: clamp(10vh, 15vh, 20vh);
+  color: skyblue;
   font-family: "Coolvetica";
 }
 
@@ -83,23 +83,27 @@ p {
 
 h1 {
   font-family: "Coolvetica";
-  font-size: 2vw;
-  color: rgb(123, 206, 219);
+  font-size: clamp(1vw, 2vw, 4vw);
+  color: skyblue;
 }
 
 h2 {
   margin-top: 1vw;
   font-size: 2vw;
-  color: rgb(123, 206, 219);
+  color: skyblue;
   font-family: "Coolvetica";
 }
 
 /* FORM */
 
+.compilalo {
+  margin-bottom: 2rem;
+}
+
 .form-container {
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-left: 4rem;
   padding-bottom: 2rem;
 }
@@ -135,11 +139,17 @@ input:hover {
 input:focus,
 input:active {
   outline: none;
-  border: 2px solid blue !important;
+  border: 2px solid rgb(67, 202, 255) !important;
+  box-shadow: 2px 3px 10px rgba(118, 118, 118, 0.791);
 }
 
 input:invalid {
-  border: 1.8px solid red;
+  border: 1.8px solid rgba(255, 55, 15, 0.839);
+}
+
+p.error-message {
+  color: rgba(255, 55, 15, 0.839);
+  font-size: 0.9rem;
 }
 
 /* LAST SECTION */
@@ -147,7 +157,7 @@ input:invalid {
 .last-section {
   display: flex;
   flex-direction: column;
-  padding-top: 2rem;
+  padding-top: 3rem;
   padding-left: 4rem;
   background-color: rgb(249, 250, 251);
   box-shadow: 0 10px 17px -15px inset rgba(0, 0, 0, 0.5);
@@ -156,7 +166,7 @@ input:invalid {
 
 button {
   width: 15rem;
-  padding: 1rem 3rem;
+  padding: 1rem 4rem;
   font-size: 1.5rem;
   font-weight: 700;
   color: white;
