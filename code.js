@@ -9,8 +9,3 @@ function checkPassword() {
     errorElement.innerHTML = "";
   }
 }
-
-function myFunction() {
-  document.getElementById("passwordError").innerHTML =
-    "The value of the input field was changed.";
-}
